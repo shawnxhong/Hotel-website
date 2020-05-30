@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Myth Land Resort|Copyright</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="copyright.css">
+		<link rel="stylesheet" href="nav.css">
+		<link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="default.css">
+		<link rel="stylesheet" href="chatbox.css">
+		
+	</head>
+
+	<body>
+		
+		<nav id="main-menu">
+			<ul>
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					<a href="about.html">About Us</a>
+				</li>
+				<li>
+					<a href="activities.html">Activities</a>
+				</li>
+				<li>
+					<a href="gallery.html">Gallery</a>
+				</li>
+				<li class="current">
+					<a href="copyright.html">Copyright</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section id="header">
+			<h2>Copyright</h2>
+		</section>
+
+		<!--copyright-->
+		<section id="reference">
+			<h2>Reference</h2>
+			<ol>
+				<li>Pokémon Ruby and Sapphire. Retrieved from <br>http://www.en.wikipedia.org/wiki/Pok%C3%A9mon_Ruby_and_Sapphire </li>
+				<li>Story of Seasons, Retrieved from<br>
+				http://www.en.wikipedia.org/wiki/Story_of_Seasons<br>
+				http://www.nintendo.com.au/catalogue/story-of-seasons-trio-of-towns</li>
+				<li>Icons. Retrieved from <br>
+				https://www.flaticon.com/authors/smalllikeart</li>
+				<li>Photo by David Frampton. Retrieved from Pexels<br>
+				https://www.pexels.com/</li>
+				<li>Photo by Tobi from Pexels. Retrieved from Pexels <br>
+				https://www.pexels.com/</li>
+				<li>Photo by Kyle Roxas from Pexels. Retrieved from Pexels <br>
+				https://www.pexels.com/</li>
+				<li>Date picker<br>
+				https://jqueryui.com/datepicker/#default</li>
+				<li>Smooth scrolling<br> https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll</li>
+				<li>Pop up chat box<br>
+				https://www.w3schools.com/howto/howto_js_popup_chat.asp</li>
+				<li>Slide show<br>
+				https://www.w3schools.com/howto/howto_js_slideshow.asp</li>
+				<li>Pop up testimonials<br>
+				https://www.notion.so/Solutions-for-JavaScript-Practical-Exercises-77ed10491d4648928a3b34fda717b6e6</li>
+			</ol>
+		</section>
+
+
+
+		<!--chat box-->
+		<button class="open-button" onclick="openForm()">Chat with Us</button>
+
+		<div class="chat-popup" id="myForm">
+			<form class="form-container">
+				<h1>Chat with us</h1>
+
+				<label for="msg"><b>Message</b></label>
+				<textarea placeholder="Type message.." name="msg" required></textarea>
+
+				<button type="submit" class="btn" onclick="success3()">Send</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+		</div>
+
+
+		<footer id="page-footer">
+			<ul>
+				<li>
+					<a href="about.html">Contact Us</a>
+				</li>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="copyright.html">Copyright</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script>
+			function openForm() {
+    			document.getElementById("myForm").style.display = "block";
+  			}
+  
+			function closeForm() {
+    			document.getElementById("myForm").style.display = "none";
+			}
+		</script>
+
+	</body>
+</html>

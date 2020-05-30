@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Myth Land Resort|Gallery</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="gallery.css">
+		<link rel="stylesheet" href="nav.css">
+		<link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="default.css">
+		<link rel="stylesheet" href="chatbox.css">
+		
+	</head>
+
+	<body>
+		
+		<nav id="main-menu">
+			<ul>
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li >
+					<a href="about.html">About Us</a>
+				</li>
+				<li>
+					<a href="activities.html">Activities</a>
+				</li>
+				<li class="current">
+					<a href="gallery.html">Gallery</a>
+				</li>
+				<li>
+					<a href="copyright.html">Copyright</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section id="header">
+			<h2>Gallery</h2>
+		</section>
+
+		<section id="intro">
+			<p>These are the photos of the mythical creatures that have been encountered by our guests<br>Book now to start your own marvellous journey.</p>
+		</section>
+
+		<!--slide show-->
+		<section class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 6</div>
+				<img src="images/g1.jpg" alt="picture of a mythical creature, have paid for the right to use" style="width:100%">
+				<div class="text">एक तंगावाला</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 6</div>
+				<img src="images/g2.jpg" alt="picture of a mythical creature, have paid for the right to use" style="width:100%">
+				<div class="text">空飛ぶライオン</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 6</div>
+				<img src="images/g3.jpg" alt="picture of a mythical creature, have paid for the right to use" style="width:100%">
+				<div class="text">きゅうびのきつね</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 6</div>
+				<img src="images/g4.jpg" alt="picture of a mythical creature, have paid for the right to use" style="width:100%">
+				<div class="text">鳳凰ほうおう</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">5 / 6</div>
+				<img src="images/g5.jpg" alt="picture of a mythical creature, have paid for the right to use" style="width:100%">
+				<div class="text">九色鹿</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">6 / 6</div>
+				<img src="images/g6.jpg" alt="picture of a mythical creature, have paid for the right to use" style="width:100%">
+				<div class="text">единорог</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+		</section>
+		<br>
+			
+		<div id="dot-buttom">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span> 
+			<span class="dot" onclick="currentSlide(5)"></span> 
+			<span class="dot" onclick="currentSlide(6)"></span> 
+		</div>
+		
+		<!--chat box-->
+		<button class="open-button" onclick="openForm()">Chat with Us</button>
+
+		<div class="chat-popup" id="myForm">
+			<form class="form-container">
+				<h1>Chat with us</h1>
+
+				<label for="msg"><b>Message</b></label>
+				<textarea placeholder="Type message.." name="msg" required></textarea>
+
+				<button type="submit" class="btn" onclick="success3()">Send</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+		</div>
+
+
+		<footer id="page-footer">
+			<ul>
+				<li>
+					<a href="about.html">Contact Us</a>
+				</li>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="copyright.html">Copyright</a>
+				</li>
+			</ul>
+		</footer>
+		
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			}
+
+		</script>
+
+		<script>
+			function openForm() {
+    			document.getElementById("myForm").style.display = "block";
+  			}
+  
+			function closeForm() {
+    			document.getElementById("myForm").style.display = "none";
+			}
+		</script>
+		
+	</body>
+</html>

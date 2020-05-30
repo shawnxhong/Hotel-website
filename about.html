@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Myth Land Resort|About</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="about.css">
+		<link rel="stylesheet" href="nav.css">
+		<link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="default.css">
+		<link rel="stylesheet" href="chatbox.css">
+		
+	</head>
+
+	<body>
+		
+		<nav id="main-menu">
+			<ul>
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li class="current">
+					<a href="about.html">About Us</a>
+				</li>
+				<li>
+					<a href="activities.html">Activities</a>
+				</li>
+				<li>
+					<a href="gallery.html">Gallery</a>
+				</li>
+				<li>
+					<a href="copyright.html">Copyright</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section id="header">
+			<h2>About Us</h2>
+		</section>
+
+		<!--about-->
+		<section id="about">
+			<div id="aboutup">
+				<article>
+					<h2>Welcome To<br>Myth Land Resort</h2>
+					<p>Myth Land is a theme resort where lots of mythical creatures live and breed. There are log cabins located at the foot of the mountains, on the top of the mountains, at lake shores and in the middle of woods.
+						You are encouraged to explore the mysterious forests area on the mountain as well as the tranquil lake, where you might be able to come across some incredible mythical creatures.
+					</p>
+				</article>
+				<div>
+
+				</div>
+			</div>
+			
+			<div id="aboutdown">
+				<article>
+					<h2>Contact Us</h2>
+					<p>Wilbanks<br>Hilda<br>Alberta<br>Mythia<br>T0J 1R0<br>403-838-8588<br>yndeasnl2jt@meantinc.com</p>
+				</article>
+				<div>
+
+				</div>
+			</div>
+
+		</section>
+
+		<!--map-->
+		<section id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78740.21326652229!2d88.88027796392856!3d31.67798275506582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-CN!2sau!4v1572848119761!5m2!1szh-CN!2sau" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</section>
+
+
+
+		<!--chat box-->
+		<button class="open-button" onclick="openForm()">Chat with Us</button>
+
+		<div class="chat-popup" id="myForm">
+			<form class="form-container">
+				<h1>Chat with us</h1>
+
+				<label for="msg"><b>Message</b></label>
+				<textarea placeholder="Type message.." name="msg" required></textarea>
+
+				<button type="submit" class="btn" onclick="success3()">Send</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+		</div>
+
+
+		<footer id="page-footer">
+			<ul>
+				<li>
+					<a href="about.html">Contact Us</a>
+				</li>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="copyright.html">Copyright</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script>
+			function openForm() {
+    			document.getElementById("myForm").style.display = "block";
+  			}
+  
+			function closeForm() {
+    			document.getElementById("myForm").style.display = "none";
+			}
+		</script>
+
+	</body>
