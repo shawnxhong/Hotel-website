@@ -1,0 +1,360 @@
+/* Main Content */
+
+#page-header {
+	height: 120vh;
+	background-repeat: no-repeat;
+	background-image: url(images/background-overview.jpg); /*copyright: https://www.pexels.com/*/
+	background-size:cover;
+	background-position: center;
+	justify-content: center;
+}
+
+#input-area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 60vh;
+}
+
+#page-header h1{
+	font-size: 3em;
+	text-align: center;
+	height: 1em;
+	padding-top: 20vh;
+	padding-bottom: 4vh;
+	color: rgba(255, 255, 255);
+}
+
+#page-header p{
+	font-size: 2em;
+	text-align: center;
+	height: 1em;
+	padding-bottom: 5vh;
+	padding-top: 3vh;
+	color: rgba(255, 255, 255);
+}
+
+#input{
+	display: flex;
+	align-self: center;
+	background-color:rgba(38, 133, 129,0.3);
+	width: 100%;
+	justify-content: center;
+	align-items: baseline;
+	padding-top: 8vh;
+	padding-bottom: 8vh;
+	align-content: space-between;
+}
+
+#input div{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 3vh;
+	align-items:center;
+}
+
+#input input,
+#input button
+{
+	padding: 1em 0.5em;
+	width: 18vh;
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#input button{
+	background-color: rgba(127, 236, 233, 0.247);
+	border: none;
+	color: white;
+}
+
+#input button:hover{
+	background-color: #009B95;
+	border: none;
+}
+
+#input label{
+	display: flex;
+	padding: 0.4em;
+	align-items:baseline;
+	justify-content: center;
+}
+
+#input label p{
+	color: azure;
+	padding: 1vh;
+	font-size: 3vh;
+}
+
+#input label img{
+	height: 10%;
+	width: 10%;
+}
+
+
+/*Rooms*/
+
+#roomheader h2{
+	text-align: center;
+	padding: 3vh 0vh 3vh 0vh;
+	font-size: 3.5vh;
+	background-color:#009B95;
+	color: whitesmoke;
+}
+
+#rooms{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5vh;
+	width: 100%;
+}
+
+#rooms article{
+	padding: 0vh 0.5vh 0vh 0.5vh;
+	align-content: center;
+	text-align: center;
+}
+
+#rooms article img{
+	max-width: 35vh;
+}
+
+#rooms article h3{
+	padding: 1vh;
+}
+
+#rooms article p{
+	padding: 1vh;
+}
+
+#rooms article button{
+	width: 80%;
+	height: 4vh;
+	background-color:rgba(0, 128, 128, 0.5) ;
+	border: none;
+	color: whitesmoke;
+	font-weight: 700;
+}
+
+#rooms article button:hover{
+	background-color: teal;
+	color: white;
+}
+
+/* Testimonials */
+
+#testimonials {
+	background: rgba(0, 128, 128, 0.801);
+	color: white;
+}
+
+#testimonials h2{
+	text-align: center;
+	padding: 3vh;
+	font-size: 3.5vh;
+}
+
+#testimonials h3{
+	color: whitesmoke;
+}
+
+#testimonials .read-more{
+	text-align: right;
+}
+
+#testimonials .read-more a {
+	color: white;
+	text-decoration: none;
+	font-size: 3vh;
+	line-height: 3vh;
+}
+
+#testimonials .read-more a:hover{
+	font-weight: 900;
+}
+
+.testimonials-list article {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3em;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.testimonials-list article:last-child {
+	padding-bottom: 0;
+}
+
+.testimonials-list article figure {
+	width: 40vh;
+	max-height: 100%vh;
+	padding-bottom: 1.5em;
+}
+
+.testimonials-list article img {
+	border-radius: 100%;
+	max-width: 100%;
+}
+
+.testimonials-list .quote {
+	width: 100%;
+}
+
+.testimonials-list .quote h3 {
+	color: #999;
+	margin-bottom: 1em;
+	font-size: 3vh;
+}
+
+.testimonials-list .quote blockquote {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+#testimonials .quote blockquote:before {
+	content: "\201C";
+	font-size: 2em;
+	margin-right: 0.2em;
+	position: relative;
+	top: 10px;
+}
+
+/* Testimonials Popup */
+
+#testimonials-popup {
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.75);
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s ease;
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	overflow: scroll;
+}
+
+#testimonials-popup .testimonials-list {
+	background: white;
+	margin: 5em;
+	padding-top: 5em;
+	box-shadow: rgba(0,0,0,0.25) 5px 5px 10px;
+	position: relative;
+	border-radius: 5px;
+}
+
+#testimonials-popup .close-button a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1em;
+}
+
+#testimonials-popup .close-button a:before {
+	content: "\2716"; /* Unicode for an 'x' icon */
+	padding-right: 5px;
+	
+}
+
+body.show-testimonials-popup {
+	overflow: hidden; 
+}
+
+body.show-testimonials-popup #testimonials-popup {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+/*feedback*/
+#message{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-bottom: 3vh ;
+}
+
+#message h2{
+	width: 100%;
+	text-align: center;
+	align-self: center;
+	padding-top: 3vh;
+	padding-bottom: 2vh;
+	color: gray;
+	font-size: 3.5vh;
+}
+
+#message-name-email{
+	align-self: center;
+	width: 100%;
+	text-align: center;
+	display: flex;
+}
+
+#message-name-email input{
+	margin-top: 3vh;
+	width: 39%;
+	height: 5vh;
+	color: #006561;
+}
+
+#name-input{
+	margin-left: 10%;
+	margin-right: 1%;
+}
+
+#email-input{
+	margin-right: 10%;
+	margin-left: 1%;
+}
+
+#message-text{
+	width: 100%;
+	text-align: center;
+}
+
+#message-text input{
+	width: 80%;
+	align-self: center;
+	height: 20vh;
+	margin-top: 3vh;
+}
+
+#message button{
+	border: none;
+	width: 16vh;
+	height: 6vh;
+	align-self: center;
+	margin-top: 3vh;
+	background-color: rgba(0, 155, 150, 0.603);
+	color: whitesmoke;
+	font-size: 3vh;
+}
+
+#message button:hover{
+	background-color: rgb(0, 155, 150);
+}
+
+@media only screen and (max-width: 900px) {
+	#input{
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	#rooms{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}

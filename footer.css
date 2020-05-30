@@ -1,0 +1,30 @@
+/*脚标*/
+
+#page-footer{
+	width:100%;
+	background:  rgba(0, 155, 150, 1);
+	margin-top: 0;
+}
+
+#page-footer ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+#page-footer li{
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	list-style: none;
+}
+
+#page-footer a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 3vh;
+	text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+}
+
+#page-footer a:hover{
+	font-size: 3vh;
+	color: rgb(59, 59, 59);
+}
